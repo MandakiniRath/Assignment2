@@ -1,90 +1,199 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #ffffff;
     margin: 0;
     padding: 0;
 }
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+.sidebar {
+    width: 200px;
+    background-color: #bfa3bf;
+    height: 100vh;
+    position: fixed;
+    padding-top: 20px;
+}
+.sidebar h4 {
+    color: #902370;
     text-align: center;
 }
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: #fff;
+.sidebar a {
+    display: block;
+    color: rgb(136, 14, 81);
+    padding: 10px;
     text-decoration: none;
+    margin: 10px 0;
+}
+.sidebar a:hover {
+    background-color: #902370;
+    color: white;
+}
+.tab-home:active{
+    background-color: #902370;
+}
+.sidebar a i {
+    margin-right: 10px;
+    
 }
 
-header nav input {
-    padding: 5px;
-    margin-left: 20px;
-}
-
-section {
+.content {
+    margin-left: 190px;
     padding: 20px;
-}
 
-h1, h2 {
-    color: #333;
 }
+.contenta {
+    margin-left: 190px;
+    padding: 0px;
 
+}
+.search-bar {
+    text-align:right;
+    padding: 30px;
+    background-color: #bfa3bf;
+}
+.search-bar input {
+    padding: 5px;
+    background-color: #bfa3bf00;
+    border: 1px solid #e41010;
+    border-radius: 5px;
+}
+.search-bar i {
+    margin-left: -25px;
+    cursor: pointer;
+}
+.cards {
+   
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.card {
+    width: 25%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.cardm {
+    width: 20%;
+    padding: 20px;
+    background-color: rgb(252, 252, 159);
+    border: 1px solid rgb(226, 239, 145);
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+}
+.card.green {
+    background-color: #a3d3a3;
+}
+.card.blue {
+    background-color: #a3b3d3;
+}
+.card.red {
+    background-color: #d3a3a3;
+}
+.table-container {
+    margin-top: 20px;
+}
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
-
 table, th, td {
-    border: 1px solid #ddd;
+    border: 2px solid #459b68;
 }
-
 th, td {
+    width: 20px;
+    height: 20px;
     padding: 10px;
     text-align: left;
 }
-
-thead {
-    background-color: #f4f4f4;
+th {
+    background-color: #a8f29c;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    background: #f4f4f4;
-    margin: 5px 0;
+.table-container.green {
+    background-color: #ffffff;
     padding: 10px;
-    border: 1px solid #ddd;
+    border-radius: 20px;
+    
+    ;
 }
-
-.account-details p {
+.table-container.blue {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+.table-container.red {
+    background-color: #ed9f9ff5;
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 10px;
+}
+.logo-circle {
+    width: 100px;
+    height: 40px;
+    background-color:rgb(136, 14, 81);
+    border-radius: 50%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
-button {
-    background: #333;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
+.pagination button {
+    padding: 10px;
+    border: 1px solid #13522c;
+    background-color: #EDE7F6;
     cursor: pointer;
+    margin: 0 5px;
 }
 
-button:hover {
-    background: #555;
+.pagination span {
+    padding: 10px;
+    border: 1px solid #167b4b;
+    background-color: #EDE7F6;
 }
+img{
+    border: 1px solid black;
+    border-radius: 25px;
+}
+.grid-container {
+    display: grid;
+    background-color: #ffffff;
+    grid-template-columns: auto auto auto;
+    gap: 1px;
+    padding: 0px;
+  }
+  h5 {
+    background: #d3a3a3;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    height: 20px;
+   
+    
+  }
+  
+  .grid-container >div {
+    text-align: center;
+    padding: 0 0;
+    
+  }
